@@ -27,24 +27,42 @@
 
 display: flex;
 width: 600px;
-height: 430px;
+height: 20rem;
+gap: 1;
+
+
 
 }
 
 .kodfun-galeri div {
+    flex: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
     opacity: .8;
-    transition: 0.9s ease;
+    transition: all .8s cubic-bezier(.25,.4,.45,1.5);
+
+    box-shadow: 0 0.1rem 0.2rem black;
+   
+    width: calc(25% - 10px);
 }
 
 .kodfun-galeri div:hover{
+    flex: 5;
     cursor: crosshair;
+    margin-left: -75px;
+    margin-right: -75px;
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
+    width: calc(50% + 150px);
 }
+
+
 
 
     </style>
