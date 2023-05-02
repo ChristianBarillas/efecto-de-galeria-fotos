@@ -10,64 +10,105 @@
 <body>
 
     <div class="kodfun-galeri">
-        <div style="background-image: url(https://creaelsalvador.com/wp-content/uploads/2023/04/PROYECTOS_Mesa-de-trabajo-1.png);"></div>
-        <div style="background-image: url(https://creaelsalvador.com/wp-content/uploads/2023/04/1.jpg);"></div>
-        <div style="background-image: url(https://creaelsalvador.com/wp-content/uploads/2023/04/PROYECTOS-02.png);"></div>
-        <div style="background-image: url(https://creaelsalvador.com/wp-content/uploads/2023/04/f73ce5ab-95a7-4e4f-9587-a57f5063fe45.jpg);"></div>
-        
-
-
-    </div>
-
-
-    <style>
-
-
-.kodfun-galeri{
-
-display: flex;
-width: 600px;
-height: 320px;
-gap: 1;
-
-
-
+        <div style="background-image: url(https://creaelsalvador.com/wp-content/uploads/2023/04/PROYECTOS_Mesa-de-trabajo-1.png);">
+      
+            <div class="overlay">
+               
+            <p>Desarrollo económico: 
+                Desarrolla innovación en el país a través de la implementación de programas y proyectos en diferentes áreas como tecnología, educación, investigación, cultura de transformación digital.
+                </p>
+          </div>
+        </div>
+        <div style="background-image: url(https://creaelsalvador.com/wp-content/uploads/2023/04/1.jpg);">
+          <div class="overlay">
+            <p>Democracia y  gobernabilidad:
+                Se fomenta el uso de tecnologías para optimizar recursos, automatizar procesos, mejorar aprendizaje y comunicación, e implementar prácticas sostenibles en la sociedad.
+                </p>
+          </div>
+        </div>
+        <div style="background-image: url(https://creaelsalvador.com/wp-content/uploads/2023/04/PROYECTOS-02.png);">
+          <div class="overlay">
+            <p>Educación:
+                Se fomenta el uso de tecnologías para optimizar recursos, automatizar procesos, mejorar aprendizaje y comunicación, e implementar prácticas sostenibles en la sociedad.
+                </p>
+          </div>
+        </div>
+        <div style="background-image: url(https://creaelsalvador.com/wp-content/uploads/2023/04/f73ce5ab-95a7-4e4f-9587-a57f5063fe45.jpg);">
+          <div class="overlay">
+            <p>Tecnología e innovación:
+                CREA vela por la promoción de la igualdad de oportunidades y la diversidad, eliminando barreras y generando un ambiente inclusivo, para todas las personas.
+                </p>
+          </div>
+        </div>
+      </div>
+      
+      <style>
+       .kodfun-galeri {
+  display: flex;
+  width: 600px;
+  height: 320px;
+  gap: 1;
 }
 
 .kodfun-galeri div {
-    flex: 1;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
+  position: relative;
+  flex: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+  box-shadow: 0 0.1rem 0.2rem black;
+  width: calc(25% - 10px);
   
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: all .8s cubic-bezier(.25,.4,.45,1.4);
-
-    box-shadow: 0 0.1rem 0.2rem black;
-   
-    width: calc(25% - 10px);
 }
 
-.kodfun-galeri div:hover{
-    flex: 5;
-    cursor: crosshair;
-    margin-left: -75px;
-    margin-right: -75px;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
-    width: calc(50% + 150px);
+.kodfun-galeri div:hover {
+  flex: 5;
+  cursor: crosshair;
+  margin-left: -75px;
+  margin-right: -75px;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+  width: calc(50% + 150px);
+
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: auto;
+  right: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+
+    /*...*/
+    width: 300px; /* ajustar según el ancho deseado */
+  left: auto;
+  right: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.kodfun-galeri div:hover .overlay {
+  display: block;
+
 }
 
 
 
-
-    </style>
-
-    
+      </style>
+      
 </body>
 <script src="code.js"></script>
 </html>

@@ -1,0 +1,74 @@
+<div class="kodfun-galeri">
+    <div style="background-image: url(https://creaelsalvador.com/wp-content/uploads/2023/04/PROYECTOS_Mesa-de-trabajo-1.png);">
+      <div class="overlay">
+        <p>Texto de ejemplo</p>
+      </div>
+    </div>
+    <div style="background-image: url(https://creaelsalvador.com/wp-content/uploads/2023/04/1.jpg);">
+      <div class="overlay">
+        <p>Texto de ejemplo</p>
+      </div>
+    </div>
+    <div style="background-image: url(https://creaelsalvador.com/wp-content/uploads/2023/04/PROYECTOS-02.png);">
+      <div class="overlay">
+        <p>Texto de ejemplo</p>
+      </div>
+    </div>
+    <div style="background-image: url(https://creaelsalvador.com/wp-content/uploads/2023/04/f73ce5ab-95a7-4e4f-9587-a57f5063fe45.jpg);">
+      <div class="overlay">
+        <p>Texto de ejemplo</p>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+    .kodfun-galeri {
+      display: flex;
+      width: 600px;
+      height: 320px;
+      gap: 1;
+    }
+  
+    .kodfun-galeri div {
+      position: relative;
+      flex: 1;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      width: 0px;
+      flex-grow: 1;
+      object-fit: cover;
+      opacity: .8;
+      transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+      box-shadow: 0 0.1rem 0.2rem black;
+      width: calc(25% - 10px);
+    }
+  
+    .kodfun-galeri div:hover {
+      flex: 5;
+      cursor: crosshair;
+      margin-left: -75px;
+      margin-right: -75px;
+      width: 300px;
+      opacity: 1;
+      filter: contrast(120%);
+      width: calc(50% + 150px);
+    }
+  
+    .overlay {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 10px;
+      font-size: 20px;
+    }
+  
+    .kodfun-galeri div:hover .overlay {
+      display: block;
+    }
+  </style>
+
